@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | 瑋瑋老師的撒野記事錄 </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   <style>
     :root {
       --bg: #f7f5ef;
@@ -235,6 +236,31 @@
       margin: 0 8px 8px 0;
     }
 
+    .social-links {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    .social-links a {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 1.15rem;
+      transition: transform 0.15s ease, background-color 0.2s ease;
+    }
+
+    .social-links a:hover {
+      transform: translateY(-2px);
+      background: #dbe8dc;
+    }
+
     footer {
       padding: 36px 0 48px;
       color: var(--muted);
@@ -257,11 +283,11 @@
     <div class="wrap nav-inner">
       <div class="brand">瑋瑋老師的撒野記事錄</div>
       <div class="menu">
-        <a href="/home/">Home</a>
+        <a href="https://weiweipaigu.github.io/home/">Home</a>
         <a href="https://weiweipaigu.github.io/calendar/">Calendar</a>
         <a href="https://weiweipaigu.github.io/shopping/">Shopping</a>
         <a href="https://weiweipaigu.github.io/about/">About</a>
-        </div>
+      </div>
     </div>
   </nav>
 
@@ -347,9 +373,19 @@
 
           <aside class="card">
             <h3>Contact</h3>
-            <div class="list">
-              <div>Email：<a href="mailto:wesker.hung@outlook.com">wesker.hung@outlook.com</a></div>
-              <div>Facebook：<a href="https://www.facebook.com/weiweipaigu" target="_blank" rel="noreferrer">weiweipaigu</a></div>
+            <div class="social-links">
+              <a href="mailto:wesker.hung@outlook.com" aria-label="Email" title="Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="https://www.facebook.com/weiweipaigu" target="_blank" rel="noreferrer" aria-label="Facebook" title="Facebook">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/weiweipaigu/" target="_blank" rel="noreferrer" aria-label="Instagram" title="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://www.youtube.com/@weiweipaigu" target="_blank" rel="noreferrer" aria-label="YouTube" title="YouTube">
+                <i class="fa-brands fa-youtube"></i>
+              </a>
             </div>
           </aside>
         </div>
